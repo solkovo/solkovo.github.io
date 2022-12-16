@@ -111,24 +111,24 @@
                         <div class="card-body">
                             <h5 class="card-title">Delusions</h5>
                             <br>
-                            <a class="btn btn-info">Read More</a>
+                            <a class="btn btn-info" data-bs-toggle="modal" data-bs-target="#Delusion">Read More</a>
                         </div>
                     </div>
                 </div>
             <div class="col">
-                <div class="card text-center mx-auto" style="width: 18rem;">
+                <div class="card text-center mx-auto" style="width: 18rem;" data-bs-target="#Hallucinations">
                     <div class="card-body">
                         <h5 class="card-title">Hallucinations</h5>
                         <br>
-                        <a class="btn btn-info">Read More</a>
+                        <a class="btn btn-info" data-bs-toggle="modal" data-bs-target="#Hallucinations">Read More</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-            <div class="card text-center mx-auto" style="width: 18rem;">
+            <div class="card text-center mx-auto" style="width: 18rem;" data-bs-target="#Disorganized">
             <div class="card-body">
                 <h5 class="card-title">Disorganized thinking (speech)</h5>
-                <a class="btn btn-info">Read More</a>
+                <a class="btn btn-info" data-bs-toggle="modal" data-bs-target="#Disorganized">Read More</a>
             </div>
         </div>
         </div>
@@ -136,29 +136,28 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col">
-            <div class="card text-center mx-auto" style="width: 18rem;">
+            <div class="card text-center mx-auto" style="width: 18rem;" data-bs-target="#Extremely">
                 <div class="card-body">
                     <h5 class="card-title">Extremely disorganized or abnormal motor behavior</h5>
-                    <a class="btn btn-info">Read More</a>
+                    <a class="btn btn-info" data-bs-toggle="modal" data-bs-target="#Extremely">Read More</a>
                 </div>
             </div>
                 </div>
                 <div class="col">
-                <div class="card text-center mx-auto" style="width: 18rem;">
+                <div class="card text-center mx-auto" style="width: 18rem;" data-bs-target="#Negativesymptoms">
                     <div class="card-body">
                         <h5 class="card-title">Negative symptoms</h5>
                         <br>
-                        <a class="btn btn-info">Read More</a>
+                        <a class="btn btn-info" data-bs-toggle="modal" data-bs-target="#Negativesymptoms">Read More</a>
                     </div>
                     </div>
                 </div>
                 <div class="col-md-2"></div>
         </div>
         
-        <p class="lead">These usually involve seeing or hearing things that don't exist. Yet for the person with schizophrenia, they have the full force and impact of a normal experience. Hallucinations can be in any of the senses, but hearing voices is the most common hallucination.</p>
-        <p class="lead">Disorganized thinking is inferred from disorganized speech. Effective communication can be impaired, and answers to questions may be partially or completely unrelated. Rarely, speech may include putting together meaningless words that can't be understood, sometimes known as word salad.</p>
-        <p class="lead">This may show in a number of ways, from childlike silliness to unpredictable agitation. Behavior isn't focused on a goal, so it's hard to do tasks. Behavior can include resistance to instructions, inappropriate or bizarre posture, a complete lack of response, or useless and excessive movement.</p>
-        <p class="lead">This refers to reduced or lack of ability to function normally. For example, the person may neglect personal hygiene or appear to lack emotion (doesn't make eye contact, doesn't change facial expressions or speaks in a monotone). Also, the person may lose interest in everyday activities, socially withdraw or lack the ability to experience pleasure.</p>
+        
+        <p class="lead"></p>
+        <p class="lead"></p>
         <p class="lead">Symptoms can vary in type and severity over time, with periods of worsening and remission of symptoms. Some symptoms may always be present.</p>
             
         <p class="lead">In men, schizophrenia symptoms typically start in the early to mid-20s. In women, symptoms typically begin in the late 20s. It's uncommon for children to be diagnosed with schizophrenia and rare for those older than age 45.</p>    
@@ -170,7 +169,7 @@
     <!-- Add the cards -->
 
     <!-- Add the Modal -->
-    <div class="modal" tabindex="-1">
+    <div class="modal" id="Delusion" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -179,6 +178,74 @@
             </div>
             <div class="modal-body">
               <p>These are false beliefs that are not based in reality. For example, you think that you're being harmed or harassed; certain gestures or comments are directed at you; you have exceptional ability or fame; another person is in love with you; or a major catastrophe is about to occur. Delusions occur in most people with schizophrenia.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="Hallucinations" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Hallucinations</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>These usually involve seeing or hearing things that don't exist. Yet for the person with schizophrenia, they have the full force and impact of a normal experience. Hallucinations can be in any of the senses, but hearing voices is the most common hallucination.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="Disorganized" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Disorganized thinking (speech)</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Disorganized thinking is inferred from disorganized speech. Effective communication can be impaired, and answers to questions may be partially or completely unrelated. Rarely, speech may include putting together meaningless words that can't be understood, sometimes known as word salad.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="Extremely" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Extremely disorganized or abnormal motor behavior</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>This may show in a number of ways, from childlike silliness to unpredictable agitation. Behavior isn't focused on a goal, so it's hard to do tasks. Behavior can include resistance to instructions, inappropriate or bizarre posture, a complete lack of response, or useless and excessive movement.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="Negativesymptoms" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Negative symptoms</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>This refers to reduced or lack of ability to function normally. For example, the person may neglect personal hygiene or appear to lack emotion (doesn't make eye contact, doesn't change facial expressions or speaks in a monotone). Also, the person may lose interest in everyday activities, socially withdraw or lack the ability to experience pleasure.</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
